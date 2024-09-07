@@ -1,0 +1,46 @@
+name: gemini_app
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+# Flutter Google Gemini SDK.
+  flutter_gemini: ^2.0.5
+#  The Google AI Dart SDK enables developers to use Google's state-of-the-art generative AI models (like Gemini).
+  google_generative_ai:
+# Deal with internationalized/localized messages, date and number formatting and parsing, bi-directional text, and other internationalization issues.
+  intl:
+# Flutter plugin for selecting images from the Android and iOS.
+  image_picker:
+#  State Management
+  flutter_bloc:
+#  Freezed
+  freezed:
+  freezed_annotation: ^2.4.4
+  build_runner:
+# Show Toast message to tell the user message.
+  fluttertoast:
+# animated jumping dot indicators.
+  jumping_dot:
+# Lightweight and blazing fast key-value database
+  hive:
+  hive_flutter:
+# Secure Important keys
+  flutter_dotenv:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
